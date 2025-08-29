@@ -8,6 +8,18 @@ package lab2;
  *
  * @author 6324569
  */
-public class PassFailActivity {
+public class PassFailActivity extends GradedActivity {
+    private double minPassingScore;
     
+    public PassFailActivity(double mps) {
+        this.minPassingScore = mps;
+    }
+    
+    public char getGrade() {
+        if (minPassingScore >= 60) {
+            return 'P';
+        } else {
+            return 'F';
+        }
+    }
 }

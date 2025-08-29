@@ -9,5 +9,20 @@ package lab2;
  * @author 6324569
  */
 public class PassFailExam {
+    private int numQuestions;
+    private double pointsEach;
+    private int numMissed;
     
+    public PassFailExam(int questions, int missed) {
+        this.numQuestions = questions;
+        this.numMissed = missed;
+    }
+    
+    public double getPointsEach() {
+        return pointsEach;
+    }
+    
+    public int getNumMissed() {
+        return numMissed;
+    }
 }
