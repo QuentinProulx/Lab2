@@ -73,7 +73,7 @@ public class CourseGrades implements Analyzable {
     @Override
     public String toString() {
         return "{[Lab Activity: (Score: " + grades[0].getScore() + ", Grade: " + grades[0].getGrade() + "], \n"
-                + "[Pass Fail Exam: (Score: " + ((PassFailExam) grades[1]).getScore() + ", Grade: " + ((PassFailExam) grades[0]).getGrade() + "], \n"
+                + "[Pass Fail Exam: (Score: " + ((PassFailExam) grades[1]).getScore() + ", Grade: " + ((PassFailExam) grades[1]).getGrade() + "], \n"
                 + "[Essay: (Score: " + ((Essay) grades[2]).getScore() + ", Grade: " + ((Essay) grades[2]).getGrade() + "], \n"
                 + "[Final Exam: (Score: " + ((FinalExam) grades[3]).getScore() + ", Grade: " + ((FinalExam) grades[3]).getGrade() + ")]}";
     }
