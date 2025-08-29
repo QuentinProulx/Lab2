@@ -8,12 +8,13 @@ package lab2;
  *
  * @author 6324569
  */
-public class PassFailExam {
+public class PassFailExam extends PassFailActivity {
     private int numQuestions;
     private double pointsEach;
     private int numMissed;
     
     public PassFailExam(int questions, int missed) {
+        super(pointsEach * numQuestions * 0.6);
         this.numQuestions = questions;
         this.numMissed = missed;
     }
