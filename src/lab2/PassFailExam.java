@@ -13,8 +13,8 @@ public class PassFailExam extends PassFailActivity {
     private double pointsEach;
     private int numMissed;
     
-    public PassFailExam(int questions, int missed) {
-        super(pointsEach * questions * 0.6);
+    public PassFailExam(int questions, int missed, double minPassing) {
+        super(minPassing);
         this.numQuestions = questions;
         this.numMissed = missed;
     }
