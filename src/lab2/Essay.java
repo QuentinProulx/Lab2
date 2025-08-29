@@ -15,10 +15,7 @@ public class Essay extends GradedActivity {
     private double content;
     
     public void setScore(double gr, double sp, double len, double cnt) {
-        this.grammer = gr;
-        this.spelling = sp;
-        this.correctLength = len;
-        this.content = cnt;
+        super.setScore(gr + sp + len + cnt);
     }
     
     public void setGrammar(double g) {
