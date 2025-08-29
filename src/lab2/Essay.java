@@ -49,6 +49,7 @@ public class Essay extends GradedActivity {
         return correctLength;
     }
     
+    @Override
     public double getScore() {
         return grammer + spelling + correctLength + content;
     }
