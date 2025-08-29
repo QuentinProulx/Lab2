@@ -14,6 +14,13 @@ public class Essay extends GradedActivity {
     private double correctLength;
     private double content;
     
+    public Essay(double grammar, double spelling, double correctLength, double content) {
+        this.grammer = grammar;
+        this.spelling = spelling;
+        this.correctLength = correctLength;
+        this.content = content;
+    }
+    
     public void setScore(double gr, double sp, double len, double cnt) {
         super.setScore(gr + sp + len + cnt);
     }
@@ -57,7 +64,7 @@ public class Essay extends GradedActivity {
                 + "Spelling points: " + this.spelling + "\n"
                 + "Length points: " + this.correctLength + "\n"
                 + "Content Points: " + this.content + "\n"
-                + "Total points: " + this.getScore()
+                + "Total points: " + this.getScore() + "\n"
                 + "Grade: " + this.getGrade();
     }
 }
