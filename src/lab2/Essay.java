@@ -50,4 +50,14 @@ public class Essay extends GradedActivity {
     public double getScore() {
         return grammer + spelling + correctLength + content;
     }
+    
+    @Override
+    public String toString() {
+        return "Grammar points: " + this.grammer + "\n"
+                + "Spelling points: " + this.spelling + "\n"
+                + "Length points: " + this.correctLength + "\n"
+                + "Content Points: " + this.content + "\n"
+                + "Total points: " + this.getScore()
+                + "Grade: " + this.getGrade();
+    }
 }
