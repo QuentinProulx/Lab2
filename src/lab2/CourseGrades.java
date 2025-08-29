@@ -8,7 +8,7 @@ package lab2;
  *
  * @author 6324569
  */
-public class CourseGrades {
+public class CourseGrades implements Analyzable {
     private GradedActivity grades[];
     private final int NUM_GRADES;
     
@@ -33,6 +33,43 @@ public class CourseGrades {
         grades[3] = aFinalExam;
     }
 
+    @Override
+    public double getAverage() {
+        double average = 0;
+        
+        for (GradedActivity gradedActivity : grades) {
+            average += gradedActivity.getScore();
+        }
+        
+        return average / NUM_GRADES;
+    }
+    
+    @Override
+    public GradedActivity getHighest() {
+        GradedActivity highest = grades[0];
+        
+        for (GradedActivity gradedActivity : grades) {
+            if (gradedActivity.getScore() > highest.getScore()) {
+                highest = gradedActivity;
+            }
+        }
+        
+        return highest;
+    }
+
+    @Override
+    public GradedActivity getLowest() {
+        GradedActivity lowest = grades[0];
+        
+        for (GradedActivity gradedActivity : grades) {
+            if (gradedActivity.getScore() < lowest.getScore) {
+                lowest = gradedActivity;
+            }
+        }
+        
+        return lowest;
+    }
+    
     @Override
     public String toString() {
         return "{[Lab Activity: (Score: " + grades[0].getScore() + ", Grade: " + grades[0].getGrade() + "], \n"
