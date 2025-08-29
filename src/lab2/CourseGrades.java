@@ -35,11 +35,9 @@ public class CourseGrades {
 
     @Override
     public String toString() {
-        String str = "";
-        for (int i = 0; i < grades.length; i++) {
-            
-        }
-        
-        return "";
+        return "{[Lab Activity: (Score: " + grades[0].getScore() + ", Grade: " + grades[0].getGrade() + "], \n"
+                + "[Pass Fail Exam: (Score: " + grades[1].getScore() + ", Grade: " + grades[0].getGrade() + "], \n"
+                + "[Essay: (Score: " + grades[2].getScore() + ", Grade: " + grades[2].getGrade() + "], \n"
+                + "[Final Exam: (Score: " + grades[3].getScore() + ", Grade: " + grades[3].getGrade() + "]}";
     }
 }
