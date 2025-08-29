@@ -14,14 +14,11 @@ public class Essay extends GradedActivity {
     private double correctLength;
     private double content;
     
-    public Essay(double grammar, double spelling, double correctLength, double content) {
-        this.grammer = grammar;
-        this.spelling = spelling;
-        this.correctLength = correctLength;
-        this.content = content;
-    }
-    
     public void setScore(double gr, double sp, double len, double cnt) {
+        this.grammer = gr;
+        this.spelling = sp;
+        this.correctLength = len;
+        this.content = cnt;
         super.setScore(gr + sp + len + cnt);
     }
     
@@ -55,16 +52,12 @@ public class Essay extends GradedActivity {
     
     @Override
     public double getScore() {
-        return grammer + spelling + correctLength + content;
+        return super.getScore();
     }
     
     @Override
     public String toString() {
-        return "Grammar points: " + this.grammer + "\n"
-                + "Spelling points: " + this.spelling + "\n"
-                + "Length points: " + this.correctLength + "\n"
-                + "Content Points: " + this.content + "\n"
-                + "Total points: " + this.getScore() + "\n"
+        return "Total points: " + this.getScore() + "\n"
                 + "Grade: " + this.getGrade();
     }
 }
