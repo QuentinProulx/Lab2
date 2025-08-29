@@ -9,7 +9,10 @@ import lab2.FinalExam;
 import lab2.GradedActivity;
 import lab2.PassFailExam;
 /**
- *
+ * NOTE: I slightly changed Step 4 because it didn't make sense in the context of the problem
+ * NOTE: I also slightly changed Step 5 to get the output provided within the document you provided
+ * https://github.com/QuentinProulx/Lab2
+ * 
  * @author Nagat
  */
 public class Lab_01_B {
