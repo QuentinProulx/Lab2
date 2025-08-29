@@ -62,7 +62,7 @@ public class CourseGrades implements Analyzable {
         GradedActivity lowest = grades[0];
         
         for (GradedActivity gradedActivity : grades) {
-            if (gradedActivity.getScore() < lowest.getScore) {
+            if (gradedActivity.getScore() < lowest.getScore()) {
                 lowest = gradedActivity;
             }
         }
