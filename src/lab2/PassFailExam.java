@@ -31,7 +31,7 @@ public class PassFailExam extends PassFailActivity {
 
     @Override
     public String toString() {
-        return "Each questions counts " + this.pointsEach + "points.\n"
+        return "Each questions counts " + this.pointsEach + " points.\n"
                 + "The exam score is " + this.getScore() + "\n"
                 + "The exam grade is " + this.getGrade();
     }
